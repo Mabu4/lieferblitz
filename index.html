@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferblitz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_box1">
+            <img class="nav_arrow" src="./images/arrow-white-left.png" alt="Arrow">
+            <img class="nav_logo" src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="nav_box2">
+            <input class="nav_input" type="text" placeholder="Musterstraße 44, 12332 Musterhausen">
+        </div>
+        <div class="nav_box3">
+            <img class="nav_menu" src="./images/menu.png" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="restaurant">
+            <img class="restaurant_image-header" src="./images/header.jpg" alt="restaurant">
+            <img class="restaurant_image-logo" src="./images/restaurant.png">
+            <div class="restaurant_container">
+                <div class="restaurant_info-container">
+                    <div class="restaurant_info-container-innerLeft">
+                        <h2 class="restaurant_headline">Baking Fresh</h2>
+                        <div class="restaurant_reviews">
+                            <img class="restaurant_icon-star" src="./images/star-32.png">
+                            <img class="restaurant_icon-star" src="./images/star-32.png">
+                            <img class="restaurant_icon-star" src="./images/star-32.png">
+                            <img class="restaurant_icon-star" src="./images/star-32.png">
+                            <img class="restaurant_icon-star" src="./images/star-32.png">
+                            <p class="text-orange restaurant_reviews-text"><u>(84 Bewertungen)</u></p>
+                        </div>
+                    </div>
+                    <div class="restaurant_info-container-innerRight">
+                        <div class="container-innerRight-icon-container">
+                            <img class="container-innerRight-icon container-innerRight-icon-container-left" src="./images/info.png" alt="">
+                        </div>
+                        <div class="container-innerRight-icon-container container-innerRight-icon-container-right">
+                            <img class="container-innerRight-icon" src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_info-delivery">
+                    <div class="restaurant_info-delivery-box">
+                        <img class="restaurant_info-delivery-icon" src="./images/time.png">
+                        <p class="restaurant_info-delivery-text">30-45 min.</p>
+                    </div>
+                    <div class="restaurant_info-delivery-box">
+                        <img class="restaurant_info-delivery-icon" src="./images/car.png">
+                        <p class="restaurant_info-delivery-text">7,00 € (ab 50€ frei)</p>
+                    </div>
+                    <div class="restaurant_info-delivery-box">
+                        <img class="restaurant_info-delivery-icon" src="./images/shopping-basket.png">
+                        <p class="restaurant_info-delivery-text">Min. 35,00 €</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="restaurant_info-paragraph">
+                        Entdecken Sie unser hausgemachtes Gebäck, welches wir mit ausgewählten
+                        Rezepten aus aller Welt zubereiten. Mit unserer Stempelkarte erhalten Sie
+                        nach jeder 10. Bestellung 50% Rabatt auf Ihre nächste Bestellung.
+                    </p>
+                </div>
+                <h2 class="menu_heading menu_heading-1">Beliebte Gerichte</h2>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Double Chocolate Cupcake</h3>
+                        <p class="menu_price text-orange">4.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Double Chocolate Cupcake', 4.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Strawberry Cheesecake</h3>
+                        <p class="menu_price text-orange">14.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Strawberry Cheesecake', 14.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Croissant Vanilla Core</h3>
+                        <p class="menu_price text-orange">3.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Croissant Vanilla Core', 3.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <img class="menu_image" src="./images/croissant.jpg">
+                <h2 class="menu_heading menu_heading-2">Croissants</h2>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Croissant Chocolate Peanut</h3>
+                        <p class="menu_price text-orange">3.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Croissant Chocolate Peanut', 3.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Croissant Creamy Caramel</h3>
+                        <p class="menu_price text-orange">3.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Croissant Creamy Caramel', 3.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Croissant Vanilla Core</h3>
+                        <p class="menu_price text-orange">3.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Croissant Vanilla Core', 3.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <img class="menu_image" src="./images/cupcakes.jpg">
+                <h2 class="menu_heading menu_heading-3">Cupcakes</h2>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Creamy Chocolate Cupcake</h3>
+                        <p class="menu_price text-orange">4.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Creamy Chocolate Cupcake', 4.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Vanilla Caramel Cupcake</h3>
+                        <p class="menu_price text-orange">4.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Vanilla Caramel Cupcake', 4.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Double Chocolate Cupcake</h3>
+                        <p class="menu_price text-orange">4.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Double Chocolate Cupcake', 4.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Blueberry Cupcake</h3>
+                        <p class="menu_price text-orange">4.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Blueberry Cupcake', 4.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <img class="menu_image" src="./images/cake.jpg">
+                <h2 class="menu_heading menu_heading-3">Cakes</h2>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Strawberry Cheesecake</h3>
+                        <p class="menu_price text-orange">14.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Strawberry Cheesecake', 14.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Vanilla Cheesecake</h3>
+                        <p class="menu_price text-orange">14.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Vanilla Cheesecake', 14.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Chocolate Party Cake</h3>
+                        <p class="menu_price text-orange">16.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Chocolate Party Cake', 16.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+                <div class="menu_meal">
+                    <div class="menu_content">
+                        <h3 class="menu_headline">Caramel Nougat Cake</h3>
+                        <p class="menu_price text-orange">14.50€</p>
+                    </div>
+                    <div onclick="addToShoppingCart('Caramel Nougat Cake', 14.50)" class="menu_icon-container">
+                        <img class="menu_icon" src="./images/plus.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping_cart" id="shoppingCartOuter">
+            <div class="close-image-container">
+                <img onclick="closeShoppingCart()" class="close-image" src="./images/close.png">
+            </div>
+            <h2 class="shopping_cart-headline">Warenkorb</h2>
+            <div class="shopping_cart-items" id="shoppingCart">
+                <div class="shopping_cart-placeholder" id="placeholder">
+                    <img class="shopping_cart-placeholder-image" src="./images/shopping-basket.png" alt="shopping-basket">
+                    <h3 class="shopping_cart-placeholder-headline">Fülle deinen Warenkorb</h3>
+                    <p class="shopping_cart-placeholder-paragraph">Füge allerlei leckere Gerichte aus unserer Auswahl hinzu und bestelle dein Essen.</p>
+                </div>
+            </div>
+            <div class="shopping_cart-footer d-none" id="shopping_cart-footer">
+                <div class="shopping_cart-footer-container">
+                    <div class="shopping_cart-footer-box">
+                        <div>Zwischensumme</div>
+                        <div id="sum"></div>
+                    </div>
+                    <div class="shopping_cart-footer-box" id="deliveryCosts">
+                        <div>Lieferkosten</div>
+                        <div>7.00 €</div>
+                    </div>
+                    <div class="shopping_cart-footer-box shopping_cart-footer-box-3">
+                        <div class="shopping_cart-footer-finalsum">Gesamt</div>
+                        <div class="shopping_cart-footer-finalsum-number" id="finalSum"></div>
+                    </div>
+                </div>
+                <div class="payment_button-container">
+                    <button class="payment_button" id="paymentButton"></button>
+                </div>
+            </div>
+        </div>
+        <div class="payment_button-container-responsive">
+            <button onclick="openShoppingCart()" class="payment_button-responsive" id="paymentButtonResponsive">Artikel hinzufügen</button>
+        </div>
+    </div>
+</body>
+</html>
